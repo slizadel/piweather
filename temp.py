@@ -11,6 +11,6 @@ while True:
     bme280_data = bme280.sample(bus, address)
     humidity = bme280_data.humidity
     pressure = bme280_data.pressure
-    ambeint_temperature = bme280_data.temperature
-    print(humidity, pressure, ambeint_temperature)
+    ambient_temperature = bme280_data.temperature
+    print(humidity, pressure, ambient_temperature)
     sleep(1)
